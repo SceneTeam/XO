@@ -1,6 +1,6 @@
 <?php
 
-define('BOT_TOKEN', '255017796:AAFPeXuzjFpBTjaezZSeC8l-BdDuTWSAsVw');
+define('BOT_TOKEN', '274229471:AAEdZV2a5TMZq9wRiChUOHE54LlFbgTmIxM');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 
 function apiRequestWebhook($method, $parameters) {
@@ -132,11 +132,13 @@ function processMessage($message) {
 `123456789:ABCDE1FGHIJ5KLMNO5PQRS`
 
 
-به ربات ما امتیاز بدید  👈        [⭐️TG Massenger⭐️](https://telegram.me/storebot?start=TGmassengerBot)
+به ربات ما امتیاز بدید  👈        [⭐️TG Massenger⭐️](https://telegram.me/storebot?start=TGXOBot)
 عضو کانال ما شوید  👈        [⭐️EleGanceTM⭐️](https://telegram.me/EleGanceTM)
 
+🔹🔶سپس به @botfather دستور "/setinline" را ارسال نمایید و متن "Xo Game :)" را برایش ارسال کنید. 😄
+
 هر نفر = یک ربات ✖️
-ربات دوم = 4000ت ✔️
+ربات دوم = 2000ت ✔️
 🤖 @TGMassengerRoBot',"parse_mode"=>"MARKDOWN","disable_web_page_preview"=>"true"));
 
 
@@ -148,7 +150,7 @@ $pmembersid= explode("\n",$txxt);
 ";
     	file_put_contents('pmembers.txt',$aaddd);
 }
-        if($chat_id == 255017796)
+        if($chat_id == 274229471)
         {
           if(!file_exists('tokens.txt')){
         file_put_contents('tokens.txt',"");
@@ -161,8 +163,8 @@ $pmembersid= explode("\n",$txxt);
 
         }
     }else if ($text == "Version") {
-      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>TG Massenger Bot</b>
-<b>ver. 1.0</b>
+      apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "<b>TG XO Creator Bot</b>
+<b>ver. 2.0</b>
 <code>Coded By</code> @Kiarash_Gh14
 @EleGanceTM 2016©","parse_mode"=>"html"));
     }
@@ -176,23 +178,20 @@ $pmembersid= explode("\n",$txxt);
       mkdir($id, 0700);
        file_put_contents($id.'/banlist.txt',"");
       file_put_contents($id.'/pmembers.txt',"");
-      file_put_contents($id.'/msgs.txt',"سلام 😃👋
-پیام خود را ارسال کنید.
--!-@-#-$
-🗣پیام ارسال شد");
+      file_put_contents($id.'/msgs.txt',"");
         file_put_contents($id.'/booleans.txt',"false");
         $phptext = file_get_contents('phptext.txt');
         $phptext = str_replace("**TOKEN**",$matches[1],$phptext);
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[1].'$texttwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url= http://tg2-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[1].'/setwebhook?url= http://tg32-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "🚀 ربات شما با مـوفقیت آپدیت شد ♻️"));
 
 
     }
     }
-    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 255017796) {
+    else if ($matches[0] != "/update"&& $matches[1]==""&&$chat_id != 274229471) {
       if (strpos($text, ":")) {
 apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال برسی 🔃"));
     $url = "http://api.telegram.org/bot".$matches[0]."/getme";
@@ -222,14 +221,14 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("**ADMIN**",$chat_id,$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url= http://tgland-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$text.'/setwebhook?url= http://tg32-tgmassenger.rhcloud.com/'.$chat_id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=tglandmassengerbot
+ https://telegram.me/storebot?start=TGXOBot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot255017796:AAFPeXuzjFpBTjaezZSeC8l-BdDuTWSAsVw/"; 
+    $bot_url    = "https://api.telegram.org/bot274229471:AAEdZV2a5TMZq9wRiChUOHE54LlFbgTmIxM/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -258,7 +257,7 @@ $output = curl_exec($ch);
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
 
 هر نفر = یک ربات ✖️
-ربات دوم = 4000ت ✔️
+ربات دوم = 2000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
 🚀 @TGMassengerRoBot"));
@@ -274,7 +273,7 @@ else{
 
 }
 
-        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 255017796) {
+        }else if ($matches[0] != "/update"&&$matches[1] != ""&&$matches[2] != ""&&$chat_id == 274229471) {
           
         if (strpos($text, ":")) {
           
@@ -306,14 +305,14 @@ apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "در حال ب
         $phptext = str_replace("**ADMIN**",$matches[1],$phptext);
         file_put_contents($token.$id.'/pvresan.php',$phptext);
         file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=');
-        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=http://tg2-tgmassenger.rhcloud.com/'.$id.'/pvresan.php');
+        file_get_contents('https://api.telegram.org/bot'.$matches[0].'/setwebhook?url=http://tg32-tgmassenger.rhcloud.com/'.$id.'/pvresan.php');
     $unstalled = "ربات شما با موفقیت نصب شده است🚀 
 برای ورود به ربات خود کلیک کنید 👇😃
 به ربات ما امتیاز بدید  👇
- https://telegram.me/storebot?start=TGmassengerBot
+ https://telegram.me/storebot?start=TGXOBot
 .";
     
-    $bot_url    = "https://api.telegram.org/bot255017796:AAFPeXuzjFpBTjaezZSeC8l-BdDuTWSAsVw/"; 
+    $bot_url    = "https://api.telegram.org/bot274229471:AAEdZV2a5TMZq9wRiChUOHE54LlFbgTmIxM/"; 
     $url        = $bot_url . "sendMessage?chat_id=" . $chat_id ; 
 
 $post_fields = array('chat_id'   => $chat_id, 
@@ -337,7 +336,7 @@ $output = curl_exec($ch);
          apiRequest("sendMessage", array('chat_id' => $chat_id, "text" => "👾 شما قبلا یک ربات ثبت کرده اید  و قادر به ثبت ربات دوم نیستید.
 
 هر نفر = یک ربات ✖️
-ربات دوم = 4000ت ✔️
+ربات دوم = 2000ت ✔️
 
 🤖 در صورت تمایل به ساخت ربات های بیشتر به ایدی زیر پیام دهید.
 🚀 @TGMassengerRoBot"));
@@ -369,7 +368,7 @@ else{
 }
 
 
-define('WEBHOOK_URL', 'https://tg2-tgmassenger.rhcloud.com/Luncher.php/');
+define('WEBHOOK_URL', 'https://tg32-tgmassenger.rhcloud.com/Luncher.php/');
 
 if (php_sapi_name() == 'cli') {
   // if run from console, set or delete webhook
